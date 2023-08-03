@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import Register from "./components/Register";
+// import UserList from "./components/UserList";
+// import Counter from "./components/counter";
+import { Container, Navbar, } from "react-bootstrap";
+import UserData from "./components/UserData";
 
-function App() {
+let App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar bg="dark" expand="sm" variant="dark">
+        <Container>
+          <Navbar.Brand href="/">React Bootstrap</Navbar.Brand>
+        </Container>
+      </Navbar>
+      {/* <Counter /> */}
+      {/* <Register/> */}
+      {/* <UserList/> */}
+      <UserData/>
+    </>
   );
-}
+};
 
 export default App;
